@@ -1,0 +1,104 @@
+<html>
+<head>
+<style>
+/* Header/Logo Title */
+.header {
+  padding: 10px;
+  text-align: left;
+  background: #F5F9FA;
+  color: Orange;
+  font-size: 25px;
+}
+
+.hh {
+text-align: right;
+color: Black;
+text-decoration:none;
+font-size:25px;
+}
+
+.ii
+{
+width:100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+</style>
+</head>
+<body>
+<div class="header">
+
+<h1>Dietly</h1>
+<p>Let Be Fit!! <h2 class="hh"><a href="sign.html">Register</a><a href="signup.html">Login</a><h2>
+</p>
+</div>
+<!-- Navigation -->
+<ul>
+<nav class="w3-bar w3-black">
+  <li><a href="#home">Home</a></li>
+  <<li><a href="#Monthly Plan">Monthly Plan</a></li>
+  <li><a href="#About">About Us</a></li>
+  <li><a href="try.html">Contact</a></li>
+</nav>
+</ul>
+
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="AdvBanners-1.jpg"
+  style="width:100%">
+  <img class="mySlides" src="spicy-chicken-meal-prep-3.28.17-6.jpg"
+  style="width:100%">
+</section>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
+</script>
+<div class="ii">
+<img src="Image.png">
+</div>
+</body>
+</html>
